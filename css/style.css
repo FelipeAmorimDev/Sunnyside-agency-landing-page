@@ -2,7 +2,7 @@
 @import url("./components/typography.css");
 @import url("./generals/general.css");
 @import url("./generals/header.css");
-@import url("/css/home/article-section.css");
+@import url("./home/article-section.css");
 @import url("./home/testimonial-section.css");
 @import url("./home/galery-section.css");
 @import url("./generals/footer.css");
