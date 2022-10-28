@@ -4,7 +4,6 @@
  
 }
 
-
 .article-content{
   background-color: white;
 }
@@ -37,10 +36,7 @@
 .article-content a{
   position: relative;
   z-index: 22;
-  
- 
 }
-
 
 .article-content .decoration a::after{
   display: block;
@@ -59,6 +55,12 @@
 
 .article-content .decoration a:hover::after{
   opacity: 1;
+  transition: .3s;
+}
+
+.article-content .decoration a:active::after{
+  opacity: 1;
+  transition: .3s;
 }
 
 .second-article .article-content .decoration a::after{
@@ -69,10 +71,17 @@
   background-color:var(--cor-p1);
   border-radius: 20px;
   opacity: .2;
+ 
 }
 
 .second-article .article-content .decoration a:hover::after{
   opacity: 1;
+  transition: .3s;
+}
+
+.second-article .article-content .decoration a:active::after{
+  opacity: 1;
+  transition: .3s;
 }
 
 .second-article{
@@ -89,7 +98,6 @@
 .second-article picture img{
   flex: 1;
 }
-
 
 .secundary-container{
   display: grid;
@@ -124,7 +132,6 @@ margin-bottom: 27px;
   display: grid;
   background-image: url("../../images/desktop/image-photography.jpg");
   background-size: cover;
- 
 }
 
 

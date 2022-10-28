@@ -18,7 +18,6 @@
 .testimonial-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
 }
 
 .tertimonial-item{
@@ -30,6 +29,7 @@
 .tertimonial-item img{
   border-radius: 50%;
 }
+
 .tertimonial-item p{
   max-width: 35ch;
 }
