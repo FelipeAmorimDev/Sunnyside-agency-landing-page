@@ -38,6 +38,16 @@
   margin-bottom: 9px;
 }
 
+.testimonial-list{
+ transform: translateX(-200px);
+ transition: .5s;
+ visibility:hidden;
+ 
+ 
+}
+
+
+
 @media (max-width:1200px){
   .testimonial-section{
     padding: 80px inset;
@@ -56,4 +66,11 @@
   .tertimonial-item{
     padding: 20px;
   }
+  .testimonial-list{
+    transform: translateX(-50px);
+    transition: .2s;
+    visibility:hidden;
+    
+    
+   }
 }
