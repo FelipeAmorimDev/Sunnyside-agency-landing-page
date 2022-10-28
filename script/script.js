@@ -10,7 +10,7 @@ function menuToogle(){
   menuHamburguerButton.classList.toggle("opacity")
 }
 
-const observer = new IntersectionObserver((entries) =>{
+const observerHalfElement = new IntersectionObserver((entries) =>{
  
     if(entries[0].isIntersecting === true){
       entries[0].target.style = "visibility: visible; transform:translate(0px);"
@@ -18,16 +18,19 @@ const observer = new IntersectionObserver((entries) =>{
     else if(entries[1].isIntersecting === true){
       entries[1].target.style = "visibility: visible; transform:translate(0px);"
       }
-    else if(entries[2].isIntersecting === true){
-        entries[2].target.style.visibility = "visible transform:translate(0px);"
-        }
-    console.log(entries)
+   console.log(entries)
 
-}, {threshold:[0.1]})
+}, {threshold:[0.5]})
+
+const observerStartElement = new IntersectionObserver((entries) => {
+  if(entries[0].isIntersecting === true){
+    entries[0].target.style = "visibility: visible; transform:translate(0px);"
+  }
+},{threshold:[0.3]} )
 
 menuHamburguerButton.addEventListener("click",menuToogle)
 
-observer.observe(firstArticle)
-observer.observe(secondArticle)
-observer.observe(lastClientTesti)
+observerHalfElement.observe(firstArticle)
+observerHalfElement.observe(secondArticle)
+observerStartElement.observe(lastClientTesti)
 
