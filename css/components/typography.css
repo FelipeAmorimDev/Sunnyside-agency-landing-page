@@ -1,0 +1,83 @@
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+.font-1-xxl{
+  font-family: 'Fraunces', serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.font-1-xl{
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.23;
+}
+
+
+.font-1-x{
+  font-family: 'Fraunces', serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.21;
+}
+
+
+.font-1-l{
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.20;
+}
+
+.font-1-s{
+  font-family: 'Fraunces', serif;
+  font-size: 1.12rem;
+  font-weight: 900;
+  line-height: 1.20;
+}
+
+.font-1-ss{
+  font-family: 'Fraunces', serif;
+  font-size: .9rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+
+.font-1-ss-b{
+  font-family: 'Fraunces', serif;
+  font-size: .9rem;
+  font-weight: 700;
+  
+}
+
+
+.font-2-x{
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.66;
+}
+
+.font-2-l{
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.48;
+}
+
+
+.font-2-s{
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.30;
+}
+
+@media (max-width:500px){
+  .font-1-xxl{
+    font-size: 2.5rem;
+  }
+}

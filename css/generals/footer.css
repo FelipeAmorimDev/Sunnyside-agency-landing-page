@@ -1,0 +1,40 @@
+.footer-bg{
+  background-color: #90D4C6;
+  display: grid;
+}
+
+.footer-container{
+  margin: 72px 0px;
+  place-self: center;
+  display: grid;
+  justify-items: center;
+}
+
+.footer-container img{
+  margin-bottom: 60px;
+}
+
+.nav-list-footer{
+  display: flex;
+  gap: 57px;
+  margin-bottom: 88px;
+  
+}
+
+.social-links{
+  display: flex;
+  gap: 28px;
+}
+
+.social-links a{
+  width: 20px;
+  height: 20px;
+}
+
+.nav-item-footer:hover{
+  color: white;
+}
+
+a:hover svg path{
+  fill: white;
+}

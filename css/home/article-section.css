@@ -1,0 +1,166 @@
+.first-article{
+ display: grid;
+ grid-template-columns: 1fr 1fr; 
+ 
+}
+
+
+.article-content{
+  background-color: white;
+}
+
+.first-article picture {
+  display: flex;
+  max-width: 100%;
+}
+
+.first-article img {
+  flex:1;
+}
+
+.article-content{
+  box-sizing: border-box;
+  place-self: center;
+  padding: 20px;
+  
+}
+
+.article-content h2{
+  max-width: 15ch;
+  margin-bottom: 32px;
+}
+
+.article-content p{
+  max-width: 45ch;
+  margin-bottom: 40px;
+}
+.article-content a{
+  position: relative;
+  z-index: 22;
+  
+ 
+}
+
+
+.article-content .decoration a::after{
+  display: block;
+  content: "";
+  min-width: 137px;
+  height: 10px;
+  opacity: .6;
+  background-color: #FAD400;
+  border-radius: 20px;
+  position: absolute;
+  left: -17px;
+  top:8px;
+  z-index: -2;
+  opacity: .2;
+}
+
+.article-content .decoration a:hover::after{
+  opacity: 1;
+}
+
+.second-article .article-content .decoration a::after{
+  display: block;
+  content: "";
+  min-width: 137px;
+  height: 10px;
+  background-color:var(--cor-p1);
+  border-radius: 20px;
+  opacity: .2;
+}
+
+.second-article .article-content .decoration a:hover::after{
+  opacity: 1;
+}
+
+.second-article{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  
+ }
+
+ .second-article picture{
+  display: flex;
+  max-width: 100%;
+ }
+
+.second-article picture img{
+  flex: 1;
+}
+
+
+.secundary-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+.design-content{
+  text-align: center;
+  display: grid;
+  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+ 
+}
+
+.container-extra{
+  place-self: flex-end center;
+}
+.container-extra h3{
+margin-bottom: 27px;
+}
+.container-extra p{
+  max-width: 38ch;
+  margin-bottom: 59px;
+}
+
+.photography-content{
+  text-align: center;
+  display: grid;
+  background-image: url("../../images/desktop/image-photography.jpg");
+  background-size: cover;
+ 
+}
+
+
+@media (max-width:1200px){
+  .first-article{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .first-article picture{
+    order:-2
+  }
+
+  .article-content{
+    padding-top: 100px ;
+    padding-bottom: 100px ;
+  }
+
+  .second-article{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .secundary-container{
+    grid-template-columns: 1fr;
+    
+  }
+  .design-content{
+    background-position: center;
+  }
+
+  .photography-content{
+    background-position: center;
+  }
+  .container-extra h3{
+    margin-top: 500px;
+    
+    
+  }
+}
